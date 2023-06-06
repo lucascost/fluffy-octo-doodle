@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { MatrizComponent } from './matriz/matriz.component';
+import { CelulaComponent } from './celula/celula.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MatrizComponent,
+    CelulaComponent
   ],
   imports: [
     BrowserModule

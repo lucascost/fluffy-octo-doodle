@@ -1,0 +1,10 @@
+<br><br>
+<div class="linha" *ngFor="let linha of matriz;let i = index">
+  <app-celula *ngFor="let celula of linha; let j = index" [vida]="celula" (click)="alterarValor(i, j)"></app-celula>
+</div>
+<br>
+<div class="d-flex flex-row justify-content-center">
+  <div class="btn btn-primary" (click)="limpar()">Limpar</div>&nbsp;
+  <div class="btn btn-primary" (click)="prepararGeracao()">Próxima geração</div>
+</div>
+
