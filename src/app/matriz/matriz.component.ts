@@ -60,7 +60,7 @@ export class MatrizComponent {
   prepararGeracao(){
 
     this.prox_geracao = this.matriz.map((linha: number[]) => [...linha]);
-    console.log('Preparando geração...');
+    
     for(let i=0; i < this.matriz.length; i++){
       for(let j=0; j < this.matriz[i].length; j++){
         let vizinhos:number = Number(this.contarVizinhos(i,j));
